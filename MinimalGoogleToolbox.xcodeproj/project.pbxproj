@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE46ADB2159B1AF4001FD153 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		BE6F83C1159B001E00A61324 /* libMinimalGoogleToolbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMinimalGoogleToolbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6F83C4159B001E00A61324 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE6F83C8159B001E00A61324 /* MinimalGoogleToolbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MinimalGoogleToolbox-Prefix.pch"; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				BE6F83D8159B00DA00A61324 /* ReleaseNotes.txt */,
+				BE46ADB2159B1AF4001FD153 /* README.txt */,
 				BE6F83D9159B023400A61324 /* COPYING */,
 				BE6F83D7159B006D00A61324 /* Foundation */,
 				BE6F83D1159B006300A61324 /* GTMDefines.h */,
@@ -245,6 +247,7 @@
 				BE6F83D0159B001E00A61324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

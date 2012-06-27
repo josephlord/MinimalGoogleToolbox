@@ -14,14 +14,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BE46ADB2159B1AF4001FD153 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		BE46ADB4159B20BD001FD153 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = SOURCE_ROOT; };
+		BE46ADB5159B20BD001FD153 /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = SOURCE_ROOT; };
 		BE6F83C1159B001E00A61324 /* libMinimalGoogleToolbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMinimalGoogleToolbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6F83C4159B001E00A61324 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE6F83C8159B001E00A61324 /* MinimalGoogleToolbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MinimalGoogleToolbox-Prefix.pch"; sourceTree = "<group>"; };
 		BE6F83D1159B006300A61324 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		BE6F83D2159B006300A61324 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		BE6F83D3159B006300A61324 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
-		BE6F83D8159B00DA00A61324 /* ReleaseNotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
 		BE6F83D9159B023400A61324 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +65,8 @@
 		BE6F83C6159B001E00A61324 /* MinimalGoogleToolbox */ = {
 			isa = PBXGroup;
 			children = (
-				BE6F83D8159B00DA00A61324 /* ReleaseNotes.txt */,
-				BE46ADB2159B1AF4001FD153 /* README.txt */,
+				BE46ADB4159B20BD001FD153 /* README.txt */,
+				BE46ADB5159B20BD001FD153 /* ReleaseNotes.txt */,
 				BE6F83D9159B023400A61324 /* COPYING */,
 				BE6F83D7159B006D00A61324 /* Foundation */,
 				BE6F83D1159B006300A61324 /* GTMDefines.h */,

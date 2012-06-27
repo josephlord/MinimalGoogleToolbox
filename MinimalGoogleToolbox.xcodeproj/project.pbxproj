@@ -8,15 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BE6F83C5159B001E00A61324 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6F83C4159B001E00A61324 /* Foundation.framework */; };
-		BE6F83CB159B001E00A61324 /* MinimalGoogleToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6F83CA159B001E00A61324 /* MinimalGoogleToolbox.m */; };
+		BE6F83D4159B006300A61324 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6F83D1159B006300A61324 /* GTMDefines.h */; };
+		BE6F83D5159B006300A61324 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6F83D2159B006300A61324 /* GTMNSString+HTML.h */; };
+		BE6F83D6159B006300A61324 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6F83D3159B006300A61324 /* GTMNSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE6F83C1159B001E00A61324 /* libMinimalGoogleToolbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMinimalGoogleToolbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6F83C4159B001E00A61324 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BE6F83C8159B001E00A61324 /* MinimalGoogleToolbox-Prefix.pch */ = {isa = PBXFileReference; path = "MinimalGoogleToolbox-Prefix.pch"; sourceTree = "<group>"; };
-		BE6F83C9159B001E00A61324 /* MinimalGoogleToolbox.h */ = {isa = PBXFileReference; path = MinimalGoogleToolbox.h; sourceTree = "<group>"; };
-		BE6F83CA159B001E00A61324 /* MinimalGoogleToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinimalGoogleToolbox.m; sourceTree = "<group>"; };
+		BE6F83C8159B001E00A61324 /* MinimalGoogleToolbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MinimalGoogleToolbox-Prefix.pch"; sourceTree = "<group>"; };
+		BE6F83D1159B006300A61324 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		BE6F83D2159B006300A61324 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		BE6F83D3159B006300A61324 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		BE6F83D8159B00DA00A61324 /* ReleaseNotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
+		BE6F83D9159B023400A61324 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +64,10 @@
 		BE6F83C6159B001E00A61324 /* MinimalGoogleToolbox */ = {
 			isa = PBXGroup;
 			children = (
-				BE6F83C9159B001E00A61324 /* MinimalGoogleToolbox.h */,
-				BE6F83CA159B001E00A61324 /* MinimalGoogleToolbox.m */,
+				BE6F83D8159B00DA00A61324 /* ReleaseNotes.txt */,
+				BE6F83D9159B023400A61324 /* COPYING */,
+				BE6F83D7159B006D00A61324 /* Foundation */,
+				BE6F83D1159B006300A61324 /* GTMDefines.h */,
 				BE6F83C7159B001E00A61324 /* Supporting Files */,
 			);
 			path = MinimalGoogleToolbox;
@@ -74,6 +81,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BE6F83D7159B006D00A61324 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				BE6F83D2159B006300A61324 /* GTMNSString+HTML.h */,
+				BE6F83D3159B006300A61324 /* GTMNSString+HTML.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -81,6 +97,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6F83D4159B006300A61324 /* GTMDefines.h in Headers */,
+				BE6F83D5159B006300A61324 /* GTMNSString+HTML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6F83CB159B001E00A61324 /* MinimalGoogleToolbox.m in Sources */,
+				BE6F83D6159B006300A61324 /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +165,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -161,7 +179,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -171,14 +189,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

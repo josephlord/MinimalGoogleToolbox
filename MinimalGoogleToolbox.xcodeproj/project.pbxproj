@@ -166,6 +166,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -199,6 +200,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -226,6 +228,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/MinimalGoogleToolbox.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinimalGoogleToolbox/MinimalGoogleToolbox-Prefix.pch";
@@ -240,6 +243,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/MinimalGoogleToolbox.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

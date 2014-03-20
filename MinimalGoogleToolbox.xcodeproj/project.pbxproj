@@ -11,6 +11,8 @@
 		BE6F83D4159B006300A61324 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6F83D1159B006300A61324 /* GTMDefines.h */; };
 		BE6F83D5159B006300A61324 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6F83D2159B006300A61324 /* GTMNSString+HTML.h */; };
 		BE6F83D6159B006300A61324 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6F83D3159B006300A61324 /* GTMNSString+HTML.m */; };
+		BEA35F1318DB51EF00540895 /* DummyClass.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA35F1118DB51EF00540895 /* DummyClass.h */; };
+		BEA35F1418DB51EF00540895 /* DummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA35F1218DB51EF00540895 /* DummyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		BE6F83D2159B006300A61324 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		BE6F83D3159B006300A61324 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		BE6F83D9159B023400A61324 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		BEA35F1118DB51EF00540895 /* DummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyClass.h; sourceTree = "<group>"; };
+		BEA35F1218DB51EF00540895 /* DummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		BE6F83D7159B006D00A61324 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				BEA35F1118DB51EF00540895 /* DummyClass.h */,
+				BEA35F1218DB51EF00540895 /* DummyClass.m */,
 				BE6F83D2159B006300A61324 /* GTMNSString+HTML.h */,
 				BE6F83D3159B006300A61324 /* GTMNSString+HTML.m */,
 			);
@@ -101,6 +107,7 @@
 			files = (
 				BE6F83D4159B006300A61324 /* GTMDefines.h in Headers */,
 				BE6F83D5159B006300A61324 /* GTMNSString+HTML.h in Headers */,
+				BEA35F1318DB51EF00540895 /* DummyClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +137,7 @@
 		BE6F83B8159B001E00A61324 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Human Friendly Ltd.";
 			};
 			buildConfigurationList = BE6F83BB159B001E00A61324 /* Build configuration list for PBXProject "MinimalGoogleToolbox" */;
@@ -156,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6F83D6159B006300A61324 /* GTMNSString+HTML.m in Sources */,
+				BEA35F1418DB51EF00540895 /* DummyClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +199,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -227,12 +235,11 @@
 		BE6F83CF159B001E00A61324 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/MinimalGoogleToolbox.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinimalGoogleToolbox/MinimalGoogleToolbox-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -242,13 +249,12 @@
 		BE6F83D0159B001E00A61324 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/MinimalGoogleToolbox.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinimalGoogleToolbox/MinimalGoogleToolbox-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";
